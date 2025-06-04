@@ -13,7 +13,7 @@ const Params = () => {
     return (
         <div>
             <h1>
-                {params[0]}
+                {params[1]}
             </h1>
             <h1>Params</h1>
         </div>
