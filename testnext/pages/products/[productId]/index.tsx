@@ -7,8 +7,12 @@ const ProductId = () => {
     const { productId } = router.query
 
     const handlePushToDetails = () => {
-          
+
         router.push(`${productId}/details`)
+    }
+
+    const handleback = () => {
+        router.back()
     }
 
     return (
@@ -17,6 +21,9 @@ const ProductId = () => {
             <div>
                 <button onClick={handlePushToDetails}>
                     product : {productId} details
+                </button>
+                <button onClick={handleback}>
+                    back
                 </button>
             </div>
         </div>
